@@ -1,8 +1,3 @@
-
-
-
-
-
 # Lista de Funções Lambda e Stream em Java
 
 Este README apresenta uma lista de funções lambda e operações de stream em Java, juntamente com uma breve descrição do que cada função faz. Essas funcionalidades são essenciais para manipular coleções de dados e simplificar a lógica de programação.
@@ -31,6 +26,38 @@ Function<T, R> function = (entrada) -> transformação(entrada);
 
 ```java
 Predicate<T> predicate = (elemento) -> condição(elemento);
+```
+
+### 4. `Supplier`
+
+- **Descrição**: `Supplier` é uma interface funcional que não aceita argumentos e fornece um resultado. É frequentemente usado para gerar ou fornecer valores.
+
+```java
+Supplier<T> supplier = () -> fornecerValor();
+```
+
+### 5. `BiFunction`
+
+- **Descrição**: `BiFunction` é uma interface funcional que representa uma função que aceita dois argumentos de entrada e retorna um resultado. É útil em situações que requerem operações em pares de elementos.
+
+```java
+BiFunction<T, U, R> biFunction = (arg1, arg2) -> operação(arg1, arg2);
+```
+
+### 6. `UnaryOperator`
+
+- **Descrição**: `UnaryOperator` é uma interface funcional que representa uma função que aceita um único argumento e retorna um resultado do mesmo tipo. É útil quando a entrada e saída têm o mesmo tipo.
+
+```java
+UnaryOperator<T> unaryOperator = (elemento) -> operação(elemento);
+```
+
+### 7. `BinaryOperator`
+
+- **Descrição**: `BinaryOperator` é uma interface funcional que representa uma função que aceita dois argumentos do mesmo tipo e retorna um resultado do mesmo tipo. É útil para operações binárias.
+
+```java
+BinaryOperator<T> binaryOperator = (arg1, arg2) -> operação(arg1, arg2);
 ```
 
 ## Operações de Stream
@@ -98,6 +125,10 @@ Optional<T> resultado = stream.reduce((acumulador, elemento) -> operação(acumu
 ```java
 long contagem = stream.count();
 ```
-## Este projeto tem como objetivo auxiliar no meu aprendizado nas funções Lambdas e Stream na linguagem Java.
 
-Esta lista fornece uma visão geral de funções lambda e operações de stream em Java, juntamente com suas descrições. Essas funcionalidades são poderosas para manipular dados em coleções de forma eficiente e concisa. Certifique-se de consultar a documentação oficial do Java e exemplos adicionais para obter informações detalhadas sobre cada função e operação.
+### 9. `collect`
+
+- **Descrição**: A operação `collect` permite coletar os elementos do stream em uma coleção ou valor específico, como uma lista, conjunto ou mapa.
+
+```java
+Collection<T> coleção =
