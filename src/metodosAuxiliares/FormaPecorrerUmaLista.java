@@ -15,5 +15,7 @@ public class FormaPecorrerUmaLista {
         }
         //forma utilizando lambdas
         nomes.forEach( System.out::println );
+
+
     }
 }
