@@ -1,12 +1,6 @@
 # Lista de Funções Lambda e Stream em Java
 
-## Codígos:
 
-[lambdas](./src/lambdas/README.md)
-
-[Stream](./src/stream/README.md)
-
-[extra...](./src/metodosAuxiliares/README.md)
 
 Este README apresenta uma lista de funções lambda e operações de stream em Java, juntamente com uma breve descrição do que cada função faz. Essas funcionalidades são essenciais para manipular coleções de dados e simplificar a lógica de programação.
 
@@ -140,5 +134,12 @@ long contagem = stream.count();
 
 ```java
 Collection<T> coleção =
+```
+## Codígos:
 
+[lambdas](./src/lambdas/README.md)
+
+[Stream](./src/stream/README.md)
+
+[extra...](./src/metodosAuxiliares/README.md)
 
