@@ -132,3 +132,10 @@ long contagem = stream.count();
 
 ```java
 Collection<T> coleção =
+
+
+## Codígos:
+
+(lambdas)[./src/lambdas/README.md]
+(Stream)[./src/stream/README.md]
+(extra...)[./src/metodosAuxiliares/README.md]
